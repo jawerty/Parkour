@@ -6,7 +6,7 @@ from pygame import key
 
 screen = pygame.display.set_mode((800, 600))
 clock = pygame.time.Clock()
-running = True
+init = True
 pygame.init()
 
 width = 800
@@ -29,8 +29,7 @@ blue = (0, 0, 255)
 white = (255, 255, 255)
 
 
-while running:
-
+while init:
 	keys = pygame.key.get_pressed()
 	if keys[275]:
 		playerx += player_speed
